@@ -4,7 +4,8 @@ const bot = new Telegram("6549933624:AAFuObit_LichTWxGpzoareH-TR0CIaUC0U", {
 });
 const chanalUniversal = "@jnsckajnask";
 bot.on("message", (msg) => {
-    if (msg.photo) {
+    if (msg.photo) { 
+        ""
         const photoId = msg.photo[0].file_id;
         bot.sendPhoto(chanalUniversal, photoId);
     } else if (msg.document) {
